@@ -372,6 +372,7 @@ export const projects: Project[] = [
     categories: ["react"],
     github: "https://github.com/BikromRoy1/iTesseract-Technologies",
     live: "https://www.itesseract.com.bd/",
+    image: "/projects/itesseract.jpg",
     hue: 190,
   },
   {
