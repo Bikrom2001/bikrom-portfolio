@@ -276,6 +276,7 @@ export const projects: Project[] = [
     categories: ["laravel"],
     github: "https://github.com/BikromRoy1/wust-university",
     live: "https://www.wust.edu/",
+    image: "/projects/wust.jpg",
     hue: 220,
   },
   {
