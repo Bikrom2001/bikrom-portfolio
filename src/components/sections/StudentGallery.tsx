@@ -44,6 +44,11 @@ export function StudentGallery() {
         count: trainingMoments.filter((m) => m.company.toLowerCase().includes("infosystem")).length,
       },
       {
+        id: "peoplentech",
+        label: "PeopleNTech",
+        count: trainingMoments.filter((m) => m.company.toLowerCase().includes("peoplentech")).length,
+      },
+      {
         id: "ticon",
         label: "Ticon System",
         count: trainingMoments.filter((m) => m.company.toLowerCase().includes("ticon")).length,
@@ -63,6 +68,9 @@ export function StudentGallery() {
     }
     if (filter === "infosystem") {
       return trainingMoments.filter((m) => m.company.toLowerCase().includes("infosystem"));
+    }
+    if (filter === "peoplentech") {
+      return trainingMoments.filter((m) => m.company.toLowerCase().includes("peoplentech"));
     }
     if (filter === "ticon") {
       return trainingMoments.filter((m) => m.company.toLowerCase().includes("ticon"));

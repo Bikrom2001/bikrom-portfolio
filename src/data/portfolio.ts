@@ -619,6 +619,18 @@ export const trainingMoments: TrainingMoment[] = [
     type: "image",
     badge: "Freelancing",
   },
+  {
+    id: "moment-pnt-wed03",
+    title: "Web Design Level-3",
+    company: "PeopleNTech Institute of IT",
+    level: "Offline",
+    batch: "PNT-Batch-WED03",
+    period: "2026",
+    image: "/images/gallery/peoplentech-brand-logo.png",
+    isBrandLogo: true,
+    type: "image",
+    badge: "Web Design",
+  },
 ];
 
 /* ------------------------------------------------------------------ */
