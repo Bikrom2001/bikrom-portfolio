@@ -32,7 +32,7 @@ export function ProjectPreview({ project }: { project: Project }) {
             alt={`Screenshot of ${project.name}`}
             fill
             sizes="(min-width: 1024px) 560px, 100vw"
-            className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
+            className="object-cover object-center transition-transform duration-700 group-hover:scale-[1.03]"
           />
         ) : (
           <div
