@@ -293,6 +293,7 @@ export const projects: Project[] = [
     categories: ["laravel"],
     github: "https://github.com/BikromRoy1/KAZI-NAZRUL-ISLAM-UNIVERSITY",
     live: "https://jkkniu.edu.bd/",
+    image: "/projects/jkkniu.jpg",
     hue: 160,
   },
   {
@@ -309,6 +310,7 @@ export const projects: Project[] = [
     categories: ["laravel"],
     github: "https://github.com/BikromRoy1",
     live: "https://bu.ac.bd/",
+    image: "/projects/barishal.jpg",
     hue: 200,
   },
   {
@@ -321,10 +323,18 @@ export const projects: Project[] = [
       "Advanced course filtering and automated registration / enrolment workflows",
       "Live batch status updates and interactive student support sections",
     ],
-    tech: ["Next.js", "React.js", "Tailwind CSS", "daisyUI", "Laravel", "MySQL"],
+    tech: [
+      "Next.js",
+      "React.js",
+      "Tailwind CSS",
+      "daisyUI",
+      "Laravel",
+      "MySQL",
+    ],
     categories: ["react", "laravel"],
     github: "https://github.com/BikromRoy1/peoplentech-app",
     live: "https://peoplentech.com.bd/",
+    image: "/projects/peoplentech.jpg",
     hue: 250,
   },
   {
@@ -341,6 +351,7 @@ export const projects: Project[] = [
     categories: ["laravel"],
     github: "https://github.com/BikromRoy1/Peoplentech-Canada",
     live: "https://peoplentech.com",
+    image: "/projects/LLC.jpg",
     hue: 275,
   },
   {
@@ -357,6 +368,7 @@ export const projects: Project[] = [
     categories: ["laravel"],
     github: "https://github.com/BikromRoy1/National-Steam",
     live: "https://nationalsteamolympiad.com/",
+    image: "/projects/National.jpg",
     hue: 30,
   },
   {
