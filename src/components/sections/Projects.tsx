@@ -1,7 +1,8 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowUpRight, Check } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Check, LayoutGrid } from "lucide-react";
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import { profile, projectFilters, projects, type Project, type ProjectCategory } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
@@ -85,12 +86,21 @@ export function Projects() {
           </AnimatePresence>
         </motion.ul>
 
-        <Reveal className="mt-12 text-center">
+        <Reveal className="mt-12 flex flex-wrap items-center justify-center gap-4">
+          <Link
+            href="/projects"
+            className="group inline-flex h-11 items-center gap-2 rounded-xl bg-accent px-5 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-accent/30 hover:brightness-110"
+          >
+            <LayoutGrid className="h-4 w-4" />
+            View All Projects
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+          </Link>
+
           <a
             href={profile.socials.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-medium text-muted transition-colors hover:text-accent"
+            className="inline-flex h-11 items-center gap-2 rounded-xl border border-line bg-surface px-5 text-sm font-medium text-fg transition-all duration-200 hover:-translate-y-0.5 hover:border-accent/50 hover:text-accent"
           >
             <GitHubIcon size={16} />
             More on GitHub
@@ -102,7 +112,7 @@ export function Projects() {
   );
 }
 
-function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="card group flex h-full flex-col p-4 transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-2xl hover:shadow-accent/10 sm:p-5">
       <ProjectPreview project={project} />
